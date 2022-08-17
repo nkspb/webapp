@@ -1,5 +1,5 @@
 REPO_MD5=$(curl -sL https://raw.githubusercontent.com/nkspb/webapp/main/html/index.html | md5sum | cut -d ' ' -f 1)
-LOCAL_MD5=$(curl -sL http://localhost:9888/index.html | md5sum | cut -d ' ' -f 1)
+LOCAL_MD5=$(curl -sL http://localhost:9889/index.html | md5sum | cut -d ' ' -f 1)
 
 if [ $REPO_MD5 = $LOCAL_MD5 ]
   then
